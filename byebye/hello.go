@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
@@ -93,6 +94,8 @@ func deleteBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+	fmt.Printf("Hello Go Pipe")
 	//Init Router
 	r := mux.NewRouter()
 
